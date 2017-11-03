@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="86dp"
+            android:layout_height="95dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_rowSpan="3"
+            app:srcCompat="@android:drawable/star_big_on"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="28dp"
+            android:layout_height="27dp"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+        <TextView
+            android:id="@+id/current_ticket"
+            android:layout_gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tickets_to_attend"
+            android:layout_gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/turno_actual" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/turnos_en_espera" />
+
+        <TextView
+            android:id="@+id/adviser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left|center_vertical"
+            android:text="TextView"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="start"
+            android:background="@color/colorAccent"
+            android:textColorLink="@android:color/background_light"
+            android:textSize="8sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="494dp"
+            tools:text="@string/solicitar_turno" />
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
